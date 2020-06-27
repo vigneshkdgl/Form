@@ -1,16 +1,346 @@
-<h1>Everything GitHub Demo</h1>
-<h4>deployed with ❤️ and angular-cli-ghpages</h4>
+<html>
+<head>
+<meta charset='UTF-8' />
+<title>Application Design</title>
+</head>
 
-<h1> Demo </h1>
-
-<p>
-  This is some dynamically loaded content that we hope to find in the Google index later on:
-</p>
-
-<hr>
-
-<h2>{{ book.title }}</h2>
-<p>
-  <img [src]="book.firstThumbnailUrl" width="100" align="left">
-  {{ book.description }}
-</p>
+<body>
+<form>
+	<div>
+		<div class="page">
+			<p style="padding-bottom: 1.5mm;">Application Form issued to:</p>
+			<table style="width:100%">
+				<tr>
+					<td>REGISTRATION No:&emsp; <input type="text" name="regno" value=""></td>
+					<td>Application	No:&emsp; <input type="text" name="appno" value=""></td>
+				 </tr>
+			</table>
+			<br>
+			<div class="row">
+				<div class="column">
+					<div id="rcorners2">
+						<table style="text-align: center;">
+							<tr >
+								<p id="titlepart"><b>St. Antony's College of Arts and Sciences for Women</b></p>
+							</tr>
+							<tr>
+								<p id="headpart">(Atfiliated to Mother Teresa	Women's Universitty)</p>
+							</tr>
+							<tr>
+								<p id="headpart">	<b>AMALA ANNAI NAGAR, THAMRAIPADI, </b></p>
+							</tr>
+							<tr>
+								<p id="headpart"><b>DINDIGUL - 624 005. </b></p>
+							</tr>
+							<tr>
+								<p id="headpart">Approved Under 2 (f) and 12 (B) 	Status of UGC</p>
+							</tr>
+							<tr>
+								<p id="application">APPLICATION FORM FOR ADMISSION</p>
+							</tr>
+						</table>
+					</div>
+					<div id="rcorners4" >
+						<table style="text-align: center;">
+							<tr >
+								<p style="font-size: 14px"><b>COURSE APPLIED FOR: (PLEASE SELECT MARK) </b></p>
+							</tr>
+							<tr>
+								<br>
+								<table style="text-align: left;"><tr>
+								<td>Course</td>
+								<td><select id="course" >
+									<option value="maths">B.Sc Mathematics</option>
+									<option value="bca">B.C.A</option>
+									<option value="bcom">B.Com</option>
+									<option value="bcom_ca" selected>B.Com. with CA</option>
+									<option value="bscIT">B.Sc, IT</option>
+									<option value="tamil">B.A, Tamil</option>
+									<option value="english">B.A, English</option>
+									<option value="computer">B.Sc,Computer Science</option>
+									<option value="physics">B.Sc, Physics</option>
+									<option value="chemistry">B.Sc, Chemistry</option>
+									<option value="zoology">B.Sc, Zoology</option>
+								</select>
+								</td>
+							</tr>
+							<tr>
+								<td>REGISTRATION No:</td><td><input type="text" name="regno" value=""></td>
+							</tr>
+							<tr>
+								<td>Application	No:</td><td><input type="text" name="appno" value=""></td>
+							</tr>
+							</table>
+							</tr>
+						</table>
+					</div>	
+				</div>
+				<div class="column" id="gab1">
+					<div id="rcorners3">
+						<br>
+						<p style="padding: 15px">RECENT COLOR PASSPORT SIZE PHOTO OF THE CANDIDATE TO BE AFFXED</p>
+					</div>
+					<div id="rcorners5">
+						<p>FOR OFFICE USE</p>
+						<br> <br> <br> <br> <br> 
+						<p><object >PRINCIPAL</object></p>
+					</div>
+				</div>
+			</div>
+			<table id="tableborder"> 
+				<tr>
+					<td id="trheight" width="50px">1</td>
+					<td id="trheight" width="150px">
+							<p style="font-size: 12px">Name of the Appicant</p>
+						</td>
+					<td id="trheight" width="500px" padding="2px">
+						<input type="text" size="66" name="name"></td>
+				</tr>
+			</table>
+			<table id="tableborder">
+				<tr>
+					<td id="trheight" width="50px">2</td>
+					<td id="trheight" width="150px">
+							<p style="font-size: 12px">DATE OF BIRTH</p>
+						</td>
+					<td id="trheight" width="105px" padding="2px"><input type="text" size="10"
+						name="dob"></td>
+					<td id="trheight" width="50px">
+							<p style="font-size: 12px">3.AGE</p>
+					</td>
+					<td id="trheight" width="55px"><input type="text" size="2" name="age"></td>
+					<td id="trheight" width="100px">
+							<p style="font-size: 12px">4.BLOOD GROUP</p>
+						</td>
+					<td id="trheight" width="70px"><input type="text" size="5" name="blood"></td>
+					<td id="trheight" width="50px">
+							<p style="font-size: 12px">5.SEX</p>
+						</td>
+					<td id="trheight" width="70px"><input type="text" size="5" name="sex"></td>
+				</tr>
+			</table>
+			<table id="tableborder">
+				<tr>
+					<td id="trheight" width="50px">6</td>
+					<td id="trheight" width="150px">
+							<p style="font-size: 12px">RELIGION</p>
+						</td>
+					<td id="trheight" width="100px"><input type="text" size="10" name="religion"></td>
+					<td id="trheight"><table >
+							<tr>
+								<td width="80px">
+										<p style="font-size: 10px">a.if Christian state whether</p>
+									</td>
+								<td width="50px"><p style="font-size: 12px">CATHOLIC</p></td>
+	
+								<td width="20px"><input type="text" size="3" name="catholic"></td>
+								<td width="80px">
+										<p style="font-size: 10px">b.if Catholic state whether</p>
+									</td>
+								<td width="53px"><p style="font-size: 12px">DALIT</p></td>
+	
+								<td width="20px"><input type="text" size="3" name="dalit"></td>
+							</tr>
+						</table></td>
+				</tr>
+			</table>
+			<table id="tableborder">
+				<tr>
+					<td id="trheight" width="50px">7</td>
+					<td id="trheight" width="150px">
+							<p style="font-size: 12px">Community</p>
+						</td>
+					<td id="trheight" width="500px"><table >
+							<tr>
+								<td><p style="font-size: 12px">OC</p></td>
+								<td width="40px"><input type="checkbox" name="oc"
+									id="checkboxsize1"></td>
+								<td><p style="font-size: 12px">BC</p></td>
+								<td width="40px"><input type="checkbox" name="bc"
+									id="checkboxsize1"></td>
+								<td><p style="font-size: 12px">MBC</p></td>
+								<td width="40px"><input type="checkbox" name="mbc"
+									id="checkboxsize1"></td>
+								<td><p style="font-size: 12px">DNC</p></td>
+								<td width="40px"><input type="checkbox" name="dnc"
+									id="checkboxsize1"></td>
+								<td><p style="font-size: 12px">SC</p></td>
+								<td width="28px"><input type="checkbox" name="sc"
+									id="checkboxsize1"></td>
+								<td><p style="font-size: 12px">ST</p></td>
+								<td width="30px"><input type="checkbox" name="st"
+									id="checkboxsize1"></td>
+								<td><p style="font-size: 12px">8. CASTE</p></td>
+								<td><input type="text" size="3" name="caste"></td>
+							</tr>
+						</table></td>
+				</tr>
+			</table>
+			<table id="tableborder">
+				<tr>
+					<td id="trheight" width="50px">9</td>
+					<td id="trheight" width="150px">
+							<p style="font-size: 12px">NATIONALITY</p>
+						</td>
+					<td id="trheight" width="150px"><input type="text" size="15"
+						name="nationality"></td>
+					<td id="trheight" width="50px">10</td>
+					<td id="trheight" width="150px">
+							<p style="font-size: 12px">MOTHER TONGUE</p>
+						</td>
+					<td id="trheight" width="150px"><input type="text" size="15" name="tongue"></td>
+				</tr>	
+			</table>
+			<table id="tableborder">
+				<tr >
+					<td id="trheight" width="50px">11</td>
+					<td id="trheight" width="150px">
+							<p style="font-size: 12px">NATIVE PLACE</p>
+						</td>
+					<td id="trheight" width="150px"><input type="text" size="15"
+						name="native_place"></td>
+					<td id="trheight" width="50px">12</td>
+					<td id="trheight" width="150px">
+							<p style="font-size: 12px">DISTRICT</p>
+						</td>
+					<td id="trheight" width="150px"><input type="text" size="15" name="district"></td>
+				</tr>
+	
+			</table>
+			<table id="tableborder">
+				<tr>
+					<td id="familyheight" width="175px"></td>
+					<td id="familyheight" width="175px"><p style="font-size: 12px">13.NAME</p></td>
+					<td id="familyheight" width="175px"><p style="font-size: 12px">14.OCCUPATION</p></td>
+					<td id="familyheight" width="175px"><p style="font-size: 12px">15.ANNUAL INCOME</p></td>
+				</tr>
+				<tr>
+					<td id="familyheight" width="175px"><p style="font-size: 12px">FATHER</p></td>
+					<td id="familyheight" width="175px"><input type="text" size="19"
+						name="father_name"></td>
+					<td id="familyheight" width="175px"><input type="text" size="19"
+						name="father_occupation"></td>
+					<td id="familyheight" width="175px"><input type="text" size="19"
+						name="father_income"></td>
+				</tr>
+				<tr>
+					<td id="familyheight" width="175px"><p style="font-size: 12px">MOTHER</p></td>
+					<td id="familyheight" width="175px"><input type="text" size="19"
+						name="mother_name"></td>
+					<td id="familyheight" width="175px"><input type="text" size="19"
+						name="mother_occupation"></td>
+					<td id="familyheight" width="175px"><input type="text" size="19"
+						name="mother_income"></td>
+				</tr>
+				<tr>
+					<td id="familyheight" width="175px"><p style="font-size: 12px">GUARDAIAN</p></td>
+					<td id="familyheight" width="175px"><input type="text" size="19"
+						name="guardaian_name"></td>
+					<td id="familyheight" width="175px"><input type="text" size="19"
+						name="guardaian_occupation"></td>
+					<td id="familyheight" width="175px"><input type="text" size="19"
+						name="guardaian_income"></td>
+				</tr>
+				<tr>
+					<td id="familyheight" width="175px"></td>
+					<td id="familyheight" width="175px"></td>
+					<td id="familyheight" width="175px"><p style="font-size: 12px">TOTAL</p></td>
+					<td id="familyheight" width="175px"><input type="text" size="19"></td>
+				</tr>
+			</table>
+			<table id="tableborder">
+				<tr>
+					<td id="trheight" width="50px">16</td>
+					<td id="trheight" width="500px"><p style="font-size: 12px">IF PHYSICALLY HANDICAPPED, SPECIFY</p></td>
+					<td id="trheight" width="150px"><input type="text" size="10" name="physically"></td>
+				</tr>
+				<tr>
+					<td id="trheight" width="50px">17</td>
+					<td id="trheight" width="500px"><p style="font-size: 12px">ARE YOU DAUGTHER OF EX-SERVICEMAN OF
+						TAMILNADU ORIGIN ?</p></td>
+					<td id="trheight" width="150px"><input type="text" size="10" name="ex_serviceeman"></td>
+				</tr>
+			</table>
+			<div class="row">
+				<div class="column">
+					<div id="rcorners6">
+						<table>
+							<tr>
+								<td style="text-align: center;" width="50px">18</td>
+								<td width="325px"><p style="font-size: 17px">PERMANENT ADDRESS OF PARENTS</p></td>
+								<td width="325px"><textarea rows="4" cols="50" name="permenent_address"></textarea></td>
+							</tr>
+						</table>
+						<table >
+							<tr>
+								<td width="100px"></td>
+								<td width="80px"><p style="font-size: 12px">PIN CODE :</p></td>
+								<td width="150px"><input type="text" size="10"
+									name="permenent_pincode"></td>
+									<td width="170px"></td>
+								<td width="50px"><p style="font-size: 12px">PHONE :</p></td>
+								<td width="150px"><input type="text" size="13" name="permenent_phone"></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+			<table id="tableborder" style="margin-top: 2px;">
+				<tr>
+					<td id="trheight" width="50px">19.</td>
+					<td id="trheight" width="200px">
+							<p style="font-size: 12px">ADDRESS SOR COMMUNICATION:</p>
+						</td>
+					<td id="trheight" width="450px" padding="3px"><input type="text" size="58"
+						name="communication_address"></td>
+				</tr>
+				<tr>
+			</table>
+			<div class="row">
+				<div class="column">
+					<div id="rcorners7">
+						<table >
+							<tr style="text-align: right;">
+								<td width="120px" ><p style="font-size: 12px">
+										APPIN NO:<input type="text" size="8" name="appino_1">
+									</p></td>
+							</tr>
+							<tr>
+								<td width="120px"><textarea rows="4" cols="43" name="text_1"></textarea>
+								</td>
+							</tr>
+							<tr style="text-align: right;">
+								<td width="200px" ><p style="font-size: 12px">
+										PIN CODE :<input type="text" size="8" name="pincode_1">
+									</p></td>
+								<td></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="column" id="rcorners7">
+					<table>
+						<tr style="text-align: right;">
+							<td width="120px" ><p style="font-size: 12px">
+									APPIN NO:<input type="text" size="8" name="appino_2">
+								</p></td>
+						</tr>
+						<tr>
+							<td width="120px"><textarea rows="4" cols="43" name="text_2"></textarea>
+							</td>
+						</tr>
+						<tr style="text-align: right;">
+							<td width="200px" ><p style="font-size: 12px">
+									PIN CODE :<input type="text" size="8" name="pincode_2">
+								</p></td>
+							<td></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<input type="submit" value="Submit">
+		</div>
+	</div>
+</form>
+</body>
+</html>
